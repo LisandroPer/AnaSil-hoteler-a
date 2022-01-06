@@ -1,4 +1,3 @@
-import duplex from "../utils/dataDuplex";
 import Item from "./Item";
 
 export default function ItemList( {items} ){
@@ -7,7 +6,8 @@ export default function ItemList( {items} ){
            {
                items.map(item => (
                    <Item 
-                     id = {item.id}
+                     key={item.id}
+                     id= {item.id}
                      duplexName = {item.duplexName}
                      capacity = {item.capacity}
                      mainImg = {item.mainImg}

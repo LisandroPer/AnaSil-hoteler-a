@@ -1,4 +1,5 @@
 import duplex from "../utils/dataDuplex";
+import { Link } from "react-router-dom";
 
 export default function Item( {id, duplexName, capacity, mainImg} ){
     return(
@@ -9,11 +10,12 @@ export default function Item( {id, duplexName, capacity, mainImg} ){
                     <img src= {mainImg} class="img-fluid rounded-start" alt={id} />
                     </div>
                     <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">Duplex: {duplexName}</h5>
-                        <p class="card-text">Capacidad: {capacity}</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Duplex: {duplexName}</h5>
+                            <p class="card-text">Capacidad: {capacity}</p>
+                            <p className="card-text"> El id es: {id}</p>
+                            <Link to={`/duplex/${id}`} type="button" class="btn btn-secondary">Ver imágenes</Link>
+                        </div>
                     </div>
                 </div>
             </div>
