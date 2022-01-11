@@ -22,10 +22,10 @@ export default function NavBar(){
                         Duplex
                     </a>
                     <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a className="dropdown-item" href="#">Action</a></li>
-                        <li><a className="dropdown-item" href="#">Sobre nosotros</a></li>
-                        <li><hr className="dropdown-divider" /></li>
-                        <li><a className="dropdown-item" href="#">Duplex</a></li>
+                        <li><Link to={`/duplex/1`} className="dropdown-item" href="#">Duplex 3</Link></li>
+                        <li><Link to={`/duplex/2`} className="dropdown-item" href="#">Duplex 4</Link></li>
+                        <li><Link to={`/duplex/3`} className="dropdown-item" href="#">Duplex 5</Link></li>
+                        <li><Link to={`/duplex/4`} className="dropdown-item" href="#">Duplex 6</Link></li>
                     </ul>
                     </li>
                     <li className="nav-item">

@@ -8,12 +8,14 @@ import {BrowserRouter, Routes, Route} from "react-router-dom";
 import SobreAnaSil from './components/SobreAnaSil';
 import ItemCarouselContainer from './components/ItemCarouselContainer';
 
+
 function App() {
   return (
     <>
        
-      <h1>AnaSil</h1>
+      
       <BrowserRouter>
+      
           <NavBar />
             <Routes>
               <Route path="/" element={<ItemListContainer />} />
